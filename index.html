@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gargi - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/9918e8e94c.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="E.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Interests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span id="ele"></span></p>
+                <h1>Hi, I'm <span>Gargi</span> <br>Bose from Kolkata</h1>
+            </div>
+        </div>
+    </div>  
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+                <img src="g.png" alt="rt">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I’m Gargi Bose, currently a final-year B.Tech student majoring in Computer Science & Engineering from Narula Institute of Technology, and I belong to the 2026 graduating batch.
+                    I live in Nimta, Kolkata. My father, Goutam Bose, is a serviceman, and my mother, Bina Bose, is a homemaker. They have always supported my journey in tech and motivated me to push my limits.</p>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C , C++, Java, Python, MySQL</li>
+                            <li><span>Tools</span><br>VSCode, Pycharm, Collab, JDK, Jupyter Notebook, MS Office, MS Excel, MS PowerPoint, MS Access, Canva</li>
+                            <li><span>CourseWork</span><br>Programming in C, Object Oriented Programming in JAVA, Data Structures and
+                            ngineering, Machine Learning.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Narula Institute of Technology</li>
+                            <li><span>2020 - 2022</span><br>Udaypur Haradayal Nag Adarsha Vidyalaya (For Girls) [H:S:]</li>
+                            <li><span>2014 - 2020</span><br>Udaypur Haradayal Nag Adarsha Vidyalaya (For Girls) [H:S:]</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Pashupati Tradex Pvt. Ltd.<br>
+                            Designed and developed an IoT-based infrastructure monitoring device<br>
+                            Engineered an IoT solution for infrastructure tracking</li>
+                        </ul>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Interests</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I'm a passionate web developer skilled in building responsive, user-centric websites using modern technologies.From clean code to seamless UI/UX, I craft digital experiences that make an impact.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Compettetive Programmer</h2>
+                    <p>"I'm a competitive programmer with a strong grasp of data structures and algorithms, solving complex problems efficiently.Regular participant in contests on platforms like Codeforces, LeetCode, and HackerRank, constantly pushing my logical and analytical skills.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>ML Enthusiast</h2>
+                    <p>I'm a Machine Learning enthusiast exploring the power of data to drive intelligent solutions.From building predictive models to working on real-world datasets, I enjoy turning data into actionable insights.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="s.jpg" alt="qw">
+                    <div class="layer">
+                        <h3>Deep Learning-CNN-Brain-Stroke-Prediction</h3>
+                        <p>This project uses a Convolutional Neural Network (CNN) to predict strokes from CT scans by identifying key visual patterns. Its goal is to enable early detection and timely intervention, improving patient outcomes and saving lives.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="p.jpg" alt="wq">
+                    <div class="layer">
+                        <h3>Anemia Sense - ML-Based Anemia Detection Web App</h3>
+                        <p>This project utilizes machine learning to predict anemia using five key blood indicators, offering early and accessible detection through a responsive web app. Built with Flask, Docker, and deployed on Render, it combines reliable models with real-time healthcare accessibility.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="t.jpg" alt="ds">
+                    <div class="layer">
+                        <h3>Gigabyte</h3>
+                        <p> a full-stack URL shortener using vanilla JavaScript and a pure Node.js HTTP server with zero frameworks or databases.Features include crypto-secure shortcodes, live UI updates, JSON-based storage, and a clean API for seamless frontend-backend integration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> gargibose442@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 8272913133</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CLCXsoH38/ "><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/bosegargi947?igsh=MWE1aXkwaml4eHd3NQ== "><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/gargi-bose-80b8b4269?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/19OfK_DmyqiQMtyxOBHc2E4oucAZjIQ2e/view?usp=drivesdk" download  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name ="submit-to-google-sheet">
+                        <input class="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; gargi <i class="fa-solid fa-heart"></i> | All rights reservered </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontents of tabcontent){
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "200px";
+        }
+    </script>
+    <script>
+    var typed = new Typed('#ele', {
+      strings: ['Web Developer' , 'Problem Solver' , 'Compettetive Programmer' , 'ML Enthusiast'],
+      typeSpeed: 50,
+    });
+  </script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxwSBT4F7n5ZY9hR_E_JoF5U0jU2Pni04ia-C9ZMZWCsQ5fiK-Nlp2jmyu0wPjonKDzjw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            mag.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
